@@ -1,0 +1,8 @@
+﻿Appium-Python-Client==5.0.0
+pytest
+python-dotenv
+selene==2.0.0rc9
+allure-pytest
+pydantic
+requests
+jsonschema
