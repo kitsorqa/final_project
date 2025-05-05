@@ -1,0 +1,316 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "object",
+      "properties": {
+        "search_preset": {
+          "type": "object",
+          "properties": {
+            "url_slug": {
+              "type": "null"
+            },
+            "meta_title": {
+              "type": "string"
+            },
+            "meta_description": {
+              "type": "string"
+            },
+            "canonical_url": {
+              "type": "string"
+            },
+            "page_title": {
+              "type": "string"
+            },
+            "short_title": {
+              "type": "string"
+            },
+            "header_text": {
+              "type": "string"
+            },
+            "footer_text": {
+              "type": "null"
+            },
+            "faq": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "question": {
+                    "type": "string"
+                  },
+                  "answer": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "question",
+                  "answer"
+                ]
+              }
+            },
+            "preset_path": {
+              "type": "string"
+            },
+            "search_params": {
+              "type": "object",
+              "properties": {
+                "age_ranges": {
+                  "type": "array",
+                  "items": {
+                    "items": {}
+                  }
+                },
+                "couple_grade_ids": {
+                  "type": "array",
+                  "items": {
+                    "items": {}
+                  }
+                },
+                "genders": {
+                  "type": "array",
+                  "items": {
+                    "items": {}
+                  }
+                },
+                "question_ids": {
+                  "type": "array",
+                  "items": {
+                    "items": {}
+                  }
+                },
+                "single_grade_ids": {
+                  "type": "array",
+                  "items": {
+                    "items": {}
+                  }
+                },
+                "sorts": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "therapy_methods": {
+                  "type": "array",
+                  "items": {
+                    "items": {}
+                  }
+                },
+                "therapy_type": {
+                  "type": "string"
+                },
+                "with_available_slots": {
+                  "type": "boolean"
+                },
+                "with_video_profile": {
+                  "type": "boolean"
+                },
+                "works_with_teenagers": {
+                  "type": "boolean"
+                },
+                "years_of_experience_ranges": {
+                  "type": "array",
+                  "items": {
+                    "items": {}
+                  }
+                }
+              },
+              "required": [
+                "age_ranges",
+                "couple_grade_ids",
+                "genders",
+                "question_ids",
+                "single_grade_ids",
+                "sorts",
+                "therapy_methods",
+                "therapy_type",
+                "with_available_slots",
+                "with_video_profile",
+                "works_with_teenagers",
+                "years_of_experience_ranges"
+              ]
+            },
+            "default": {
+              "type": "boolean"
+            },
+            "related_search_presets": {
+              "type": "array",
+              "items": {
+                "items": {}
+              }
+            }
+          },
+          "required": [
+            "url_slug",
+            "meta_title",
+            "meta_description",
+            "canonical_url",
+            "page_title",
+            "short_title",
+            "header_text",
+            "footer_text",
+            "faq",
+            "preset_path",
+            "search_params",
+            "default",
+            "related_search_presets"
+          ]
+        },
+        "therapists": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "hashid": {
+                "type": "string"
+              },
+              "fio": {
+                "type": "string"
+              },
+              "exp_years": {
+                "type": "integer"
+              },
+              "tz": {
+                "type": "string"
+              },
+              "desc": {
+                "type": "string"
+              },
+              "education": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "year": {
+                      "type": [
+                        "null",
+                        "string",
+                        "integer"
+                      ]
+                    },
+                    "course": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "year",
+                    "course"
+                  ]
+                }
+              },
+              "methods": {
+                "type": [
+                  "array",
+                  "null"
+                ],
+                "items": {
+                  "type": "string"
+                }
+              },
+              "single_grade_id": {
+                "type": "integer"
+              },
+              "couple_grade_id": {
+                "type": "integer"
+              },
+              "single_question_ids": {
+                "type": "array",
+                "items": {
+                  "type": "integer"
+                }
+              },
+              "couple_question_ids": {
+                "type": "array",
+                "items": {
+                  "type": "integer"
+                }
+              },
+              "next_session_at": {
+                "type": "string"
+              },
+              "sessions_count": {
+                "type": "integer"
+              },
+              "picture": {
+                "type": "object",
+                "properties": {
+                  "large": {
+                    "type": "string"
+                  },
+                  "large2x": {
+                    "type": "string"
+                  },
+                  "large3x": {
+                    "type": "string"
+                  },
+                  "large_srcset": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "large",
+                  "large2x",
+                  "large3x",
+                  "large_srcset"
+                ]
+              },
+              "with_video_profile": {
+                "type": "boolean"
+              },
+              "url": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "hashid",
+              "fio",
+              "exp_years",
+              "tz",
+              "desc",
+              "education",
+              "methods",
+              "single_grade_id",
+              "couple_grade_id",
+              "single_question_ids",
+              "couple_question_ids",
+              "next_session_at",
+              "sessions_count",
+              "picture",
+              "with_video_profile",
+              "url"
+            ]
+          }
+        }
+      },
+      "required": [
+        "search_preset",
+        "therapists"
+      ]
+    },
+    "pagination": {
+      "type": "object",
+      "properties": {
+        "current_page": {
+          "type": "integer"
+        },
+        "total_pages": {
+          "type": "integer"
+        },
+        "per_page": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "current_page",
+        "total_pages",
+        "per_page"
+      ]
+    }
+  },
+  "required": [
+    "data",
+    "pagination"
+  ]
+}

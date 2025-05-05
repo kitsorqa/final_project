@@ -13,14 +13,14 @@ class TherapistsPage:
         self.price_of_therapists_in_popup = '._s-popup_content span'
         self.short_filters_popup = '._s-popup_layer'
         self.info_popup_about_therapist = '._mt-3 > ._tw-ui-icon'
-        self.show_more = 'button._btn-base-secondary'
+        self.show_more = 'button.u_btn-base-secondary'
         self.symptoms = 'Симптомы'
         self.approach = 'Подход'
         self.price = 'Цена'
         self.gender = 'Пол'
         self.all_filters = 'Все фильтры'
         self.sort_short_filters = '[data-id="therapist-catalog-short-filters"] ._s-select._ml-auto'
-        self.apply_filter_in_search_modal = '._s-popup_controls ._btn-base-primary'
+        self.apply_filter_in_search_modal = '._s-popup_controls .u_btn-base-primary'
         self.cancel_filter_in_search_modal = 'Отменить'
         self.clear_filter_in_search_modal = '._s-popup_controls ._btn-base-thetriary'
         self.enter_button = '.header__actions .nav-link'
@@ -59,7 +59,7 @@ class TherapistsPage:
 
     @allure.step("Скролл страницы вниз к футеру страницы")
     def scroll_page_down(self):
-        browser.execute_script(f"window.scroll(0, 6000)")
+        browser.execute_script(f"window.scrollTo(0, 6000)")
         return self
 
     @allure.step("Нажатие кнопки 'Показать еще'")

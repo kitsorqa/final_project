@@ -1,0 +1,66 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "question_ids": {
+      "type": "array",
+      "items": {}
+    },
+    "works_with_teenagers": {
+      "type": "boolean"
+    },
+    "genders": {
+      "type": "array",
+      "items": {}
+    },
+    "therapy_type": {
+      "type": "string"
+    },
+    "single_grade_ids": {
+      "type": "array",
+      "items": {}
+    },
+    "couple_grade_ids": {
+      "type": "array",
+      "items": {}
+    },
+    "time_mode": {
+      "type": "string"
+    },
+    "days_and_hours": {
+      "type": "array",
+      "items": {}
+    },
+    "therapy_methods": {
+      "type": "array",
+      "items": {}
+    },
+    "age_ranges": {
+      "type": "array",
+      "items": {}
+    },
+    "with_available_slots": {
+      "type": "boolean"
+    },
+    "with_video_profile": {
+      "type": "boolean"
+    },
+    "years_of_experience_ranges": {
+      "type": "array",
+      "items": {}
+    },
+    "sorts": {
+      "type": "array",
+      "items": {}
+    },
+    "page": {
+      "type": "integer"
+    },
+    "therapist_time_zone": {
+      "type": "string"
+    },
+    "user_time_zone": {
+      "type": "string"
+    }
+  }
+}

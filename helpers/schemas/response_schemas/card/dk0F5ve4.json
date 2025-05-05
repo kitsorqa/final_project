@@ -1,0 +1,114 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "object",
+      "properties": {
+        "therapist": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "fio": {
+              "type": "string"
+            },
+            "userpic_link": {
+              "type": "string"
+            },
+            "exp": {
+              "type": "integer"
+            },
+            "early_start": {
+              "type": "boolean"
+            },
+            "desc": {
+              "type": "string"
+            },
+            "lgbt": {
+              "type": "boolean"
+            },
+            "single": {
+              "type": "boolean"
+            },
+            "couple": {
+              "type": "boolean"
+            },
+            "educations": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "year": {
+                      "type": "integer"
+                    },
+                    "course": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "year",
+                    "course"
+                  ]
+                }
+              ]
+            },
+            "methods": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "title": {
+                      "type": "string"
+                    },
+                    "description": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "title",
+                    "description"
+                  ]
+                }
+              ]
+            },
+            "is_bookable": {
+              "type": "boolean"
+            },
+            "is_stopped_hiring_new_clients": {
+              "type": "boolean"
+            },
+            "show_resched_session_modal": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "id",
+            "fio",
+            "userpic_link",
+            "exp",
+            "early_start",
+            "desc",
+            "lgbt",
+            "single",
+            "couple",
+            "educations",
+            "methods",
+            "is_bookable",
+            "is_stopped_hiring_new_clients",
+            "show_resched_session_modal"
+          ]
+        }
+      },
+      "required": [
+        "therapist"
+      ]
+    }
+  },
+  "required": [
+    "data"
+  ]
+}

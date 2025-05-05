@@ -136,6 +136,9 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+tests/api_tests/allure-results
+tests/ui_tests/allure-results
+tests/mobile_tests/allure-results
 
 # Spyder project settings
 .spyderproject

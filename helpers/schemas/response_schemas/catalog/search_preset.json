@@ -1,0 +1,121 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "object",
+      "properties": {
+        "search_preset": {
+          "type": "object",
+          "properties": {
+            "url_slug": {
+              "type": "string"
+            },
+            "meta_title": {
+              "type": "string"
+            },
+            "meta_description": {
+              "type": "string"
+            },
+            "canonical_url": {
+              "type": "string"
+            },
+            "page_title": {
+              "type": "string"
+            },
+            "short_title": {
+              "type": "string"
+            },
+            "header_text": {
+              "type": "string"
+            },
+            "footer_text": {
+              "type": "null"
+            },
+            "faq": {
+              "type": "array",
+              "items": {}
+            },
+            "preset_path": {
+              "type": "string"
+            },
+            "search_params": {
+              "type": "object",
+              "properties": {
+                "age_ranges": {
+                  "type": "array",
+                  "items": {}
+                },
+                "couple_grade_ids": {
+                  "type": "array",
+                  "items": {}
+                },
+                "genders": {
+                  "type": "array",
+                  "items": {}
+                },
+                "question_ids": {
+                  "type": "array",
+                  "items": {}
+                },
+                "single_grade_ids": {
+                  "type": "array",
+                  "items": {}
+                },
+                "sorts": {
+                  "type": "array",
+                  "items": {}
+                },
+                "therapy_methods": {
+                  "type": "array",
+                  "items": {}
+                },
+                "therapy_type": {
+                  "type": "string"
+                },
+                "with_available_slots": {
+                  "type": "boolean"
+                },
+                "with_video_profile": {
+                  "type": "boolean"
+                },
+                "works_with_teenagers": {
+                  "type": "boolean"
+                },
+                "years_of_experience_ranges": {
+                  "type": "array",
+                  "items": {}
+                }
+              }
+            },
+            "default": {
+              "type": "boolean"
+            },
+            "related_search_presets": {
+              "type": "array",
+              "items": {}
+            }
+          }
+        },
+        "therapists": {
+          "type": "array",
+          "items": {}
+        }
+      }
+    },
+    "pagination": {
+      "type": "object",
+      "properties": {
+        "current_page": {
+          "type": "integer"
+        },
+        "total_pages": {
+          "type": "integer"
+        },
+        "per_page": {
+          "type": "integer"
+        }
+      }
+    }
+  }
+}
