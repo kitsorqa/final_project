@@ -17,6 +17,7 @@
 
 # Используемые технологии
 
+<p align="center">
 <img src="https://github.com/kitsorqa/final_project/blob/main/imgs/requests.jpg" width="50">
 <img src="https://github.com/kitsorqa/final_project/blob/main/imgs/Jenkins.png" width="50">
 <img src="https://github.com/kitsorqa/final_project/blob/main/imgs/Pytest_logo.svg.png" width="50">
