@@ -172,9 +172,6 @@
               "exp_years": {
                 "type": "integer"
               },
-              "tz": {
-                "type": "string"
-              },
               "desc": {
                 "type": "string"
               },
