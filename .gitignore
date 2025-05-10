@@ -129,6 +129,9 @@ celerybeat.pid
 
 # Environments
 .env
+.env.bstack
+.env.real_device
+.env.emulator
 .venv
 .idea
 env/
@@ -139,6 +142,7 @@ venv.bak/
 tests/api_tests/allure-results
 tests/ui_tests/allure-results
 tests/mobile_tests/allure-results
+allure-results
 
 # Spyder project settings
 .spyderproject

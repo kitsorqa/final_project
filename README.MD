@@ -53,24 +53,27 @@ pytest ./tests/mobile_tests
 Если необходимо запустить мобильные тесты на реальном девайса
 
 ```
-context = 'real_device'
+context =real_device pytest ./tests/mobile_tests/
 ```
 
 Для запуска мобильных тестов на эмуляторе
 
 ```
-context=emulator
+context=emulator pytest ./tests/mobile_tests/
 ```
 
 4. Генерация отчетности
 
 ```
-cd ./tests/{Нужная тестовая директория}
-allure serve allure-results/
+allure serve
 ИЛИ
 allure generate -o {название сгенерированного отчета}
 allure open {название сгенерированного отчета}
 ```
+
+Результаты прохождения тестов
+
+<img src="https://github.com/kitsorqa/final_project/blob/main/imgs/result_of_all_tests.png">
 
 
 # Используемые технологии

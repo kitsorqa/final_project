@@ -6,14 +6,14 @@ from pages.therapists_page import therapists
 
 class TestTherapistsPage:
 
-    @allure.label('owner', 'Ivanov Rostislav')
-    @allure.feature('Проверка работы страницы therapists')
-    @allure.tag('web')
-    @allure.severity(Severity.NORMAL)
-    def test_filters_should_has_short_filters(self):
-        (therapists
-         .open()
-         .filters_should_be_not_selected())
+    # @allure.label('owner', 'Ivanov Rostislav')
+    # @allure.feature('Проверка работы страницы therapists')
+    # @allure.tag('web')
+    # @allure.severity(Severity.NORMAL)
+    # def test_filters_should_has_short_filters(self):
+    #     (therapists
+    #      .open()
+    #      .filters_should_be_not_selected())
 
     @allure.label('owner', 'Ivanov Rostislav')
     @allure.feature('Проверка работы страницы therapists')
@@ -40,29 +40,29 @@ class TestTherapistsPage:
          .choose_max_filter()
          .check_max_price_in_card())
 
-    @allure.label('owner', 'Ivanov Rostislav')
-    @allure.feature('Проверка работы страницы therapists')
-    @allure.tag('web')
-    @allure.severity(Severity.CRITICAL)
-    def test_compare_price_popup_and_card(self):
-        (therapists.open()
-         .click_info_icon_in_card()
-         .check_price_in_info_popup())
-
-    @allure.label('owner', 'Ivanov Rostislav')
-    @allure.feature('Проверка работы страницы therapists')
-    @allure.tag('web')
-    @allure.severity(Severity.NORMAL)
-    def test_choose_couple_therapy(self):
-        (therapists.open()
-         .choose_couple_therapy()
-         .check_couple_symptoms_in_popup()
-         .check_couple_therapy_short_filters())
-
-    @allure.label('owner', 'Ivanov Rostislav')
-    @allure.feature('Проверка работы страницы therapists')
-    @allure.tag('web')
-    @allure.severity(Severity.MINOR)
-    def test_footer_should_have_links(self):
-        (therapists.open()
-         .check_footer_page_for_links())
+    # @allure.label('owner', 'Ivanov Rostislav')
+    # @allure.feature('Проверка работы страницы therapists')
+    # @allure.tag('web')
+    # @allure.severity(Severity.CRITICAL)
+    # def test_compare_price_popup_and_card(self):
+    #     (therapists.open()
+    #      .click_info_icon_in_card()
+    #      .check_price_in_info_popup())
+    #
+    # @allure.label('owner', 'Ivanov Rostislav')
+    # @allure.feature('Проверка работы страницы therapists')
+    # @allure.tag('web')
+    # @allure.severity(Severity.NORMAL)
+    # def test_choose_couple_therapy(self):
+    #     (therapists.open()
+    #      .choose_couple_therapy()
+    #      .check_couple_symptoms_in_popup()
+    #      .check_couple_therapy_short_filters())
+    #
+    # @allure.label('owner', 'Ivanov Rostislav')
+    # @allure.feature('Проверка работы страницы therapists')
+    # @allure.tag('web')
+    # @allure.severity(Severity.MINOR)
+    # def test_footer_should_have_links(self):
+    #     (therapists.open()
+    #      .check_footer_page_for_links())

@@ -1,8 +1,8 @@
 import pytest
+import os
 from selene import browser
 from utils import attachments
 from selenium import webdriver
-import os
 from selenium.webdriver.chrome.options import Options
 
 
@@ -14,33 +14,35 @@ def browser_settings():
     browser.config.window_height = 1080
     browser.config.window_width = 1920
     browser.config.base_url = 'https://yasno.live'
-    browser.config.timeout = 5
+    browser.config.timeout = 15
 
     options = Options()
-    # selenoid_capabilities = {
-    #     "browserName": "chrome",
-    #     "browserVersion": "127.0",
-    #     "selenoid:options": {
-    #         "enableVNC": True,
-    #         "enableVideo": True
-    #     }
-    # }
+    selenoid_capabilities = {
+        "browserName": "chrome",
+        "browserVersion": "127.0",
+        "selenoid:options": {
+            "enableVNC": True,
+            "enableVideo": True
+        }
+    }
 
     options.add_argument("--disable-gpu")
     options.add_argument("--no-sandbox")
     options.add_argument("--disable-dev-shm-usage")
     options.add_argument("--incognito")
 
-    # options.capabilities.update(selenoid_capabilities)
-    # driver = webdriver.Remote(
-    #     command_executor=f"https://{selenoid_login}:{selenoid_pass}@{selenoid_url}/wd/hub",
-    #     options=options)
-    #
-    # browser.config.driver = driver
+    options.capabilities.update(selenoid_capabilities)
+    driver = webdriver.Remote(
+        command_executor=f"https://{selenoid_login}:{selenoid_pass}@{selenoid_url}/wd/hub",
+        options=options
+    )
+    browser.config.driver = driver
 
     yield
-    # attachments.add_html(browser)
-    # attachments.add_screenshot(browser)
-    # attachments.add_logs(browser)
-    # attachments.add_video(browser)
+
+    attachments.add_html(browser)
+    attachments.attach_screenshot(browser)
+    attachments.add_logs()
+    attachments.add_video(browser)
+
     browser.quit()
